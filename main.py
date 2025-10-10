@@ -63,10 +63,12 @@ tournaments = [
         "Solo Cash Cup Finals", 
         "FNCS Division 1",
         "FNCS Division 2", 
-        "FNCS Division 3", 
+        "FNCS Division 3",
+        "FNCS Finals",
         "Performance Evaluation Opens",
         "Performance Evaluation Finals", 
-        "FNCS Showdown"
+        "FNCS Showdown",
+        "Reload Quick Cup"
     ]
 
 async def event_autocomplete(interaction: discord.Interaction, current: str):
@@ -84,7 +86,6 @@ async def calculatepr(interaction: discord.Interaction, event: str, placement: i
     print(f"Calculating PR for event {event}, and placement {placement} by request of {interaction.user}")
 
     event = event.lower()
-
     result = calculate_pr(event, placement)
 
     print(f"Sending {result} to the server")
@@ -99,7 +100,7 @@ async def events(interaction: discord.Interaction):
     tournaments = [
         "Solo Cash Cup Opens", "Solo Cash Cup Finals", "FNCS Division 1",
         "FNCS Division 2", "FNCS Division 3", "Performance Evaluation Opens",
-        "Performance Evaluation Opens", "FNCS Showdown"
+        "Performance Evaluation Opens", "FNCS Showdown", "Reload Quick Cup"
     ]
     await interaction.response.send_message(f"Supported Tournaments: {tournaments}")
 

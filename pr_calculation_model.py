@@ -54,6 +54,11 @@ def calculate_pr(event, place):
                 return "Rank is too low."
             
             pr_bracket = events.fncs_showdown()
+        
+        elif event == "reload quick cup":
+            if rank > 10000:
+                return "Rank is too low."
+            pr_bracket = events.reload_quick_cup()
 
         # Interpolation logic
         sorted_brackets = sorted(pr_bracket.items(), key=lambda x: x[0][0])
