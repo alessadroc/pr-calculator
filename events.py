@@ -5,7 +5,7 @@ class Events:
 
     # Data is sourced from fortnitetracker.com
 
-    def solo_cash_cup_opens(self):
+    def solo_opens(self):
         return {
             (1, 1): 1000,
             (2, 2): 900,
@@ -39,7 +39,7 @@ class Events:
             (7501, 10000): 0
         }
     
-    def solo_cash_cup_finals(self):
+    def solo_finals(self):
         return {
             (1, 1): 2000,
             (2, 2): 1800,

@@ -7,17 +7,17 @@ def calculate_pr(event, place):
         rank = int(place)
         pr_bracket = {}
         
-        if event == "solo cash cup opens":
+        if event == "solo opens":
             if rank > 10000:
                 return "0"
             
-            pr_bracket = events.solo_cash_cup_opens()
+            pr_bracket = events.solo_opens()
         
-        elif event == "solo cash cup finals":
+        elif event == "solo finals":
             if rank > 600:
                return "Rank is too low."
             
-            pr_bracket = events.solo_cash_cup_finals()
+            pr_bracket = events.solo_finals()
 
         elif event == "fncs division 1":
             if rank > 10000:

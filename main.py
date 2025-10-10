@@ -59,12 +59,11 @@ GUILD_ID = discord.Object(id=1371811106590425140)
 
 # Available tournaments
 tournaments = [
-        "Solo Cash Cup Opens", 
-        "Solo Cash Cup Finals", 
+        "Solo Opens", 
+        "Solo Finals", 
         "FNCS Division 1",
         "FNCS Division 2", 
         "FNCS Division 3",
-        "FNCS Finals",
         "Performance Evaluation Opens",
         "Performance Evaluation Finals", 
         "FNCS Showdown",
@@ -97,11 +96,6 @@ async def calculatepr(interaction: discord.Interaction, event: str, placement: i
 
 @client.tree.command(name="events", description="Lists all supported tournaments", guild=GUILD_ID)
 async def events(interaction: discord.Interaction):
-    tournaments = [
-        "Solo Cash Cup Opens", "Solo Cash Cup Finals", "FNCS Division 1",
-        "FNCS Division 2", "FNCS Division 3", "Performance Evaluation Opens",
-        "Performance Evaluation Opens", "FNCS Showdown", "Reload Quick Cup"
-    ]
     await interaction.response.send_message(f"Supported Tournaments: {tournaments}")
 
 client.run(token=Token)
