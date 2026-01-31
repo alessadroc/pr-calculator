@@ -36,7 +36,7 @@ class View(discord.ui.View):
     @discord.ui.button(label="Show Graph", style=discord.ButtonStyle.blurple, emoji="📈")
     async def button_callback(self, interaction: discord.Interaction, button: discord.ui.Button):
         print(f"Generating graph by request of {interaction.user}")
-
+        
         # graph calling and sending to message
         graph = Graph(event=self.event, placement=self.placement, user=interaction.user)
         fig = graph.plot_graph()
