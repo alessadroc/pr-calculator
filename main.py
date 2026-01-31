@@ -27,9 +27,6 @@ class Client(commands.Bot):
         if message.content.startswith("hello"):
             await message.channel.send(f"Hi there {message.author}!")
 
-    async def on_reaction_add(self, reaction, user):
-        await reaction.message.channel.send(f"Hi {user}, you reacted using {reaction}!")
-
 class View(discord.ui.View):
     def __init__(self, event: str, placement: int):
         super().__init__()
