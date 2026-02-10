@@ -90,9 +90,4 @@ async def calculatepr(interaction: discord.Interaction, event: str, placement: i
     view = View(event=event, placement=placement)
     await msg.edit(content=f"**{result}** PR for placing #{placement} in {event}", view=view)
 
-
-@client.tree.command(name="events", description="Lists all supported tournaments", guild=GUILD_ID)
-async def events(interaction: discord.Interaction):
-    await interaction.response.send_message(f"Supported Tournaments: {tournaments}")
-
 client.run(token=Token)
