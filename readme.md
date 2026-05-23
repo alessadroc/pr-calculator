@@ -1,8 +1,8 @@
-# Fortnite Power Ranking Calculator
+# Power Ranking Calculator
 
 ## Overview
 
-The Power Ranking Calculator is a simple Discord Application that calculates the PR (Power Ranking) gained based on a player's placement in various Fortnite tournaments. The program allows users to use a command where they input an event, ranking, and receive a PR estimate.
+The Power Ranking Calculator is a simple Discord Application that calculates the PR (Power Ranking) gained based on a player's placement in various  tournaments of competitive online gaming. The program allows users to use a command where they input an event, ranking, and receive a PR estimate.
 
 An accuracy of around 95% has been achieved in PR calculation.
 
